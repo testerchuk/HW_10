@@ -1,2 +1,37 @@
-    1  command_list.csv
-    2  history > command_list.csv
+    1  https://github.com/testerchuk/HW_10.git
+    2  git clone https://github.com/testerchuk/HW_10.git
+    3  cd HW_10
+    4  pwd
+    5  LS
+    6  git clone https://github.com/testerchuk/HW_10.git
+    7  cd HW_10
+    8  ls
+    9  cd HW_10
+   10  сдуфк
+   11  clear
+   12  cd HW_10
+   13  touch text_ignore.txt
+   14  echo "text_ignore.txt" >> .gitignore
+   15  git status
+   16  git add .
+   17  git commit -m "Add text_ignore.txt to .gitignore"
+   18  touch main_test.txt
+   19  git add .
+   20  git commit -m "Add main_test.txt"
+   21  cat .gitignore
+   22  echo "test file" >> main_test.txt
+   23  git status
+   24  git add main_test.txt
+   25  git commit -m "Add main_test.txt"
+   26  git checkout -b develop
+   27  touch develop_test.txt
+   28  git add .
+   29  git commit -m "Add develop_test.txt"
+   30  echo "just a small change" >> develop_test.txt
+   31  git status
+   32  git add .
+   33  git commit -m "Update develop_test.txt"
+   34  git checkout main
+   35  git merge develop --no-ff -m "Merge branch 'develop' into main"
+   36  git log --oneline --graph --decorate --all
+   37  history > command_list.csv
